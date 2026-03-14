@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Breakwater Dives | Itou Izu</title>
+	<style>
+		:root {
+			--ocean-blue: #0077be;
+			--deep-blue: #001f3f;
+			--sand: #f4f4f4;
+		}
+
+		body {
+			font-family: 'Helvetica Neue', Arial, sans-serif;
+			margin: 0;
+			color: #333;
+			line-height: 1.6;
+		}
+
+		/* Language Switcher */
+		.lang-nav {
+			background: var(--deep-blue);
+			padding: 10px;
+			text-align: right;
+		}
+
+		.lang-btn {
+			color: white;
+			background: none;
+			border: 1px solid white;
+			cursor: pointer;
+			margin-left: 5px;
+			padding: 5px 10px;
+			border-radius: 4px;
+		}
+
+		.lang-btn:hover {
+			background: white;
+			color: var(--deep-blue);
+		}
+
+		/* Hero Section */
+		.hero {
+			background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://via.placeholder.com/1200x600?text=Insert+Boat+Hero+Image+Here');
+			background-size: cover;
+			background-position: center;
+			height: 60vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: white;
+			text-align: center;
+		}
+
+		/* Content Sections */
+		.section {
+			padding: 50px 20px;
+			max-width: 1000px;
+			margin: auto;
+		}
+
+		.grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+			gap: 30px;
+		}
+
+		.card {
+			border: 1px solid #ddd;
+			padding: 20px;
+			border-radius: 8px;
+			background: white;
+		}
+
+		.card img {
+			width: 100%;
+			border-radius: 4px;
+		}
+
+		/* Language Hiding Logic */
+		[lang="ja"],
+		[lang="fr"] {
+			display: none;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="lang-nav">
+		<button class="lang-btn" onclick="setLang('en')">English</button>
+		<button class="lang-btn" onclick="setLang('ja')">日本語</button>
+		<button class="lang-btn" onclick="setLang('fr')">Français</button>
+	</nav>
+
+	<header class="hero">
+		<div>
+			<h1 lang="en">Breakwater Dives</h1>
+			<h1 lang="ja">ブレイクウォーター・ダイブ</h1>
+			<h1 lang="fr">Breakwater Dives</h1>
+
+			<p lang="en">Explore the underwater walls of Itou, Izu</p>
+			<p lang="ja">伊豆・伊東の堤防に広がる水中世界へ</p>
+			<p lang="fr">Explorez les parois sous-marines d'Itou, Izu</p>
+		</div>
+	</header>
+
+	<section class="section">
+		<h2 style="text-align:center;">
+			<span lang="en">Our Services</span>
+			<span lang="ja">サービス案内</span>
+			<span lang="fr">Nos Services</span>
+		</h2>
+		<div class="grid">
+			<div class="card">
+				<img src="https://via.placeholder.com/400x250?text=Diver+at+Breakwater" alt="Diving">
+				<h3 lang="en">Fun Dives</h3>
+				<h3 lang="ja">ファンダイビング</h3>
+				<h3 lang="fr">Plongée Plaisir</h3>
+				<p lang="en">Guided tours of the vibrant local sea life.</p>
+				<p lang="ja">地元を知り尽くしたガイドが伊東の海をご案内。</p>
+				<p lang="fr">Visites guidées de la vie marine locale.</p>
+			</div>
+			<div class="card">
+				<img src="https://via.placeholder.com/400x250?text=PADI+Course" alt="Courses">
+				<h3 lang="en">Certifications</h3>
+				<h3 lang="ja">ライセンス取得</h3>
+				<h3 lang="fr">Formations</h3>
+				<p lang="en">PADI courses for beginners to advanced.</p>
+				<p lang="ja">初心者から上級者まで、PADIライセンス講習。</p>
+				<p lang="fr">Cours PADI du débutant à l'avancé.</p>
+			</div>
+			<div class="card">
+				<img src="https://via.placeholder.com/400x250?text=Rental+Gear" alt="Gear">
+				<h3 lang="en">Rental Gear</h3>
+				<h3 lang="ja">レンタル器材</h3>
+				<h3 lang="fr">Location de Matériel</h3>
+				<p lang="en">Full sets of high-quality equipment.</p>
+				<p lang="ja">メンテナンス済みのフルセットレンタル。</p>
+				<p lang="fr">Équipement complet de haute qualité.</p>
+			</div>
+		</div>
+	</section>
+
+	<script>
+		function setLang(lang) {
+			document.querySelectorAll('[lang]').forEach(el => {
+				el.style.display = el.getAttribute('lang') === lang ? 'block' : 'none';
+			});
+		}
+	</script>
+</body>
+
+</html>
