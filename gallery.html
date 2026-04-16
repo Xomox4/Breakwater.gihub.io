@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery – Breakwater Dives</title>
+  <meta name="description" content="Browse underwater photos from our dive tours in Izu and beyond.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <svg viewBox="0 0 36 36" fill="none" xmlns="https://i.etsystatic.com/18800113/r/il/a33d5c/2413278944/il_570xN.2413278944_bd37.jpg">
+          <circle cx="18" cy="18" r="17" stroke="#00d4aa" stroke-width="2"/>
+          <path d="M10 20c2-4 4-8 8-8s6 4 8 8" stroke="#00d4aa" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="18" cy="14" r="3" fill="#00d4aa"/>
+          <path d="M14 26c1-2 2.5-3 4-3s3 1 4 3" stroke="#00d4aa" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        Breakwater Dives
+      </a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="gallery.html" class="active">Gallery</a>
+        <a href="booking.html">Booking</a>
+        <a href="booking.html" class="nav-cta">Book Now</a>
+      </div>
+      <button class="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>📸 Dive Gallery</h1>
+      <p>Glimpses of the underwater world waiting for you in Izu and beyond.</p>
+    </div>
+  </section>
+
+  <!-- Gallery Grid -->
+  <section>
+    <div class="container">
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&h=450&fit=crop" alt="Scuba diver exploring coral reef">
+          <div class="gallery-overlay"><span>Coral Reef Exploration</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1682687220742-aba13b6e50ba?w=600&h=450&fit=crop" alt="Sea turtle swimming">
+          <div class="gallery-overlay"><span>Sea Turtle Encounter</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&h=450&fit=crop" alt="Tropical fish schooling">
+          <div class="gallery-overlay"><span>Tropical Fish School</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1583212292454-1fe6229603b7?w=600&h=450&fit=crop" alt="Diver near rocky formation">
+          <div class="gallery-overlay"><span>Rocky Formations</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1546026423-cc4642628d2b?w=600&h=450&fit=crop" alt="Underwater sunlight">
+          <div class="gallery-overlay"><span>Sunlight Through Water</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://thumbs.dreamstime.com/b/vibrant-sea-slug-nudibranch-underwater-macro-photography-close-up-colorful-intricate-patterns-textures-414253183.jpg" alt="Colorful nudibranch">
+          <div class="gallery-overlay"><span>Marine Macro Life</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1621155346337-1d19476ba7d6?w=600&h=450&fit=crop" alt="Ocean blue water">
+          <div class="gallery-overlay"><span>Crystal Blue Waters</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1571752726703-5e7d1f6a986d?w=600&h=450&fit=crop" alt="Diver with equipment">
+          <div class="gallery-overlay"><span>Ready to Dive</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1682695797221-8164ff1fafc9?w=600&h=450&fit=crop" alt="Jellyfish underwater">
+          <div class="gallery-overlay"><span>Jellyfish Encounter</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?w=600&h=450&fit=crop" alt="Green sea turtle">
+          <div class="gallery-overlay"><span>Green Sea Turtle</span></div>
+        </div>
+      </div>
+      <p style="text-align: center; color: var(--text-light); margin: 40px 0 60px; font-size: .9rem;">
+        📷 Want your photos here? Share your dive photos with us and we'll feature the best ones!
+      </p>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" aria-label="Close">&times;</button>
+    <button class="lightbox-nav lightbox-prev" aria-label="Previous">&#8249;</button>
+    <img id="lightboxImg" src="" alt="Gallery photo">
+    <button class="lightbox-nav lightbox-next" aria-label="Next">&#8250;</button>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="18" cy="18" r="17" stroke="#00d4aa" stroke-width="2"/>
+              <path d="M10 20c2-4 4-8 8-8s6 4 8 8" stroke="#00d4aa" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="18" cy="14" r="3" fill="#00d4aa"/>
+              <path d="M14 26c1-2 2.5-3 4-3s3 1 4 3" stroke="#00d4aa" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            Breakwater Dives
+          </a>
+          <p>Discover Izu's incredible underwater world with personalized, multilingual dive experiences.</p>
+        </div>
+        <div>
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="booking.html">Booking</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Dive Sites</h4>
+          <ul>
+            <li><a href="booking.html">East Izu</a></li>
+            <li><a href="booking.html">Western Izu</a></li>
+            <li><a href="booking.html">Okinawa</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:Jwhk751@gmail.com">📧 Jwhk751@gmail.com</a></li>
+            <li>📍 Izu Peninsula, Japan</li>
+            <li>🗣️ EN / FR / JP</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 Breakwater Dives. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

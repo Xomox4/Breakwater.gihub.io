@@ -1,156 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Breakwater Dives | Itou Izu</title>
-	<style>
-		:root {
-			--ocean-blue: #0077be;
-			--deep-blue: #001f3f;
-			--sand: #f4f4f4;
-		}
-
-		body {
-			font-family: 'Helvetica Neue', Arial, sans-serif;
-			margin: 0;
-			color: #333;
-			line-height: 1.6;
-		}
-
-		/* Language Switcher */
-		.lang-nav {
-			background: var(--deep-blue);
-			padding: 10px;
-			text-align: right;
-		}
-
-		.lang-btn {
-			color: white;
-			background: none;
-			border: 1px solid white;
-			cursor: pointer;
-			margin-left: 5px;
-			padding: 5px 10px;
-			border-radius: 4px;
-		}
-
-		.lang-btn:hover {
-			background: white;
-			color: var(--deep-blue);
-		}
-
-		/* Hero Section */
-		.hero {
-			background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://via.placeholder.com/1200x600?text=Insert+Boat+Hero+Image+Here');
-			background-size: cover;
-			background-position: center;
-			height: 60vh;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			color: white;
-			text-align: center;
-		}
-
-		/* Content Sections */
-		.section {
-			padding: 50px 20px;
-			max-width: 1000px;
-			margin: auto;
-		}
-
-		.grid {
-			display: grid;
-			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-			gap: 30px;
-		}
-
-		.card {
-			border: 1px solid #ddd;
-			padding: 20px;
-			border-radius: 8px;
-			background: white;
-		}
-
-		.card img {
-			width: 100%;
-			border-radius: 4px;
-		}
-
-		/* Language Hiding Logic */
-		[lang="ja"],
-		[lang="fr"] {
-			display: none;
-		}
-	</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Breakwater Dives – Discover Izu's Underwater World</title>
+  <meta name="description" content="Breakwater Dives offers guided scuba diving in Izu, Japan. Multilingual guides (EN/FR/JP), certified & first-time divers welcome. Close to Tokyo.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-	<nav class="lang-nav">
-		<button class="lang-btn" onclick="setLang('en')">English</button>
-		<button class="lang-btn" onclick="setLang('ja')">日本語</button>
-		<button class="lang-btn" onclick="setLang('fr')">Français</button>
-	</nav>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="18" cy="18" r="17" stroke="#00d4aa" stroke-width="2"/>
+          <path d="M10 20c2-4 4-8 8-8s6 4 8 8" stroke="#00d4aa" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="18" cy="14" r="3" fill="#00d4aa"/>
+          <path d="M14 26c1-2 2.5-3 4-3s3 1 4 3" stroke="#00d4aa" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        Breakwater Dives
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="booking.html">Booking</a>
+        <a href="booking.html" class="nav-cta">Book Now</a>
+      </div>
+      <button class="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
 
-	<header class="hero">
-		<div>
-			<h1 lang="en">Breakwater Dives</h1>
-			<h1 lang="ja">ブレイクウォーター・ダイブ</h1>
-			<h1 lang="fr">Breakwater Dives</h1>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-bubbles"></div>
+    <div class="hero-content">
+      <div class="hero-badge">🤿 Izu Peninsula, Japan</div>
+      <h1>Dive Into <span>Crystal Waters</span> Just Outside Tokyo</h1>
+      <p>Experience Izu's stunning marine life with multilingual guides. Whether you're a certified diver or trying it for the first time, we've got you covered.</p>
+      <div class="hero-btns">
+        <a href="booking.html" class="btn btn-primary">📅 Book Your Dive</a>
+        <a href="gallery.html" class="btn btn-outline">📸 View Gallery</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <div class="stat-num">90 min</div>
+          <div class="stat-label">From Tokyo</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">3</div>
+          <div class="stat-label">Languages</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">100+</div>
+          <div class="stat-label">Marine Species</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-			<p lang="en">Explore the underwater walls of Itou, Izu</p>
-			<p lang="ja">伊豆・伊東の堤防に広がる水中世界へ</p>
-			<p lang="fr">Explorez les parois sous-marines d'Itou, Izu</p>
-		</div>
-	</header>
+  <!-- Why Izu -->
+  <section class="why-izu" id="why-izu">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">🌊 Why Izu?</div>
+        <h2 class="section-title">The Perfect Diving Destination</h2>
+        <p class="section-subtitle">Discover why Izu Peninsula is one of Japan's best-kept diving secrets.</p>
+      </div>
+      <div class="merits-grid">
+        <div class="merit-card">
+          <div class="merit-icon tokyo">🚄</div>
+          <h3>Close to Tokyo</h3>
+          <p>Just 90 minutes from central Tokyo by train. Perfect for a day trip or weekend getaway — no flights needed.</p>
+        </div>
+        <div class="merit-card">
+          <div class="merit-icon nature">🏔️</div>
+          <h3>Natural Dive Site</h3>
+          <p>Dive in natural rocky coastlines and volcanic formations — not artificial reefs. Authentic underwater landscapes await.</p>
+        </div>
+        <div class="merit-card">
+          <div class="merit-icon marine">🐠</div>
+          <h3>Rich Marine Life</h3>
+          <p>From sea turtles and nudibranchs to seasonal hammerhead sharks. Izu's Kuroshio current brings incredible biodiversity.</p>
+        </div>
+        <div class="merit-card">
+          <div class="merit-icon quiet">🤫</div>
+          <h3>Quiet & Peaceful</h3>
+          <p>Escape the crowds. Enjoy intimate dive sessions in a relaxed, uncrowded environment with personalized attention.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-	<section class="section">
-		<h2 style="text-align:center;">
-			<span lang="en">Our Services</span>
-			<span lang="ja">サービス案内</span>
-			<span lang="fr">Nos Services</span>
-		</h2>
-		<div class="grid">
-			<div class="card">
-				<img src="https://via.placeholder.com/400x250?text=Diver+at+Breakwater" alt="Diving">
-				<h3 lang="en">Fun Dives</h3>
-				<h3 lang="ja">ファンダイビング</h3>
-				<h3 lang="fr">Plongée Plaisir</h3>
-				<p lang="en">Guided tours of the vibrant local sea life.</p>
-				<p lang="ja">地元を知り尽くしたガイドが伊東の海をご案内。</p>
-				<p lang="fr">Visites guidées de la vie marine locale.</p>
-			</div>
-			<div class="card">
-				<img src="https://via.placeholder.com/400x250?text=PADI+Course" alt="Courses">
-				<h3 lang="en">Certifications</h3>
-				<h3 lang="ja">ライセンス取得</h3>
-				<h3 lang="fr">Formations</h3>
-				<p lang="en">PADI courses for beginners to advanced.</p>
-				<p lang="ja">初心者から上級者まで、PADIライセンス講習。</p>
-				<p lang="fr">Cours PADI du débutant à l'avancé.</p>
-			</div>
-			<div class="card">
-				<img src="https://via.placeholder.com/400x250?text=Rental+Gear" alt="Gear">
-				<h3 lang="en">Rental Gear</h3>
-				<h3 lang="ja">レンタル器材</h3>
-				<h3 lang="fr">Location de Matériel</h3>
-				<p lang="en">Full sets of high-quality equipment.</p>
-				<p lang="ja">メンテナンス済みのフルセットレンタル。</p>
-				<p lang="fr">Équipement complet de haute qualité.</p>
-			</div>
-		</div>
-	</section>
+  <!-- Languages -->
+  <section class="languages">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">🗣️ Multilingual Guides</div>
+        <h2 class="section-title">We Speak Your Language</h2>
+        <p class="section-subtitle">Feel comfortable and safe with guides who speak your language throughout your dive.</p>
+      </div>
+      <div class="lang-grid">
+        <div class="lang-card">
+          <div class="lang-flag">🇬🇧</div>
+          <h3>English</h3>
+          <p>Full briefing & guiding</p>
+        </div>
+        <div class="lang-card">
+          <div class="lang-flag">🇫🇷</div>
+          <h3>Français</h3>
+          <p>Briefing & accompagnement</p>
+        </div>
+        <div class="lang-card">
+          <div class="lang-flag">🇯🇵</div>
+          <h3>日本語</h3>
+          <p>ブリーフィング & ガイド</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-	<script>
-		function setLang(lang) {
-			document.querySelectorAll('[lang]').forEach(el => {
-				el.style.display = el.getAttribute('lang') === lang ? 'block' : 'none';
-			});
-		}
-	</script>
+  <!-- Tours -->
+  <section class="tours" id="tours">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">🗺️ Dive Tours</div>
+        <h2 class="section-title">Choose Your Adventure</h2>
+        <p class="section-subtitle">From Izu's coastal gems to tropical Okinawa — we have the perfect dive for you.</p>
+      </div>
+      <div class="tours-grid">
+        <div class="tour-card">
+          <div class="tour-img" style="background: linear-gradient(135deg, #0d3b66, #1a6fb5);">
+            🏖️
+            <span class="tour-tag">Most Popular</span>
+          </div>
+          <div class="tour-body">
+            <h3>East Izu</h3>
+            <p>Explore IOP (Izu Oceanic Park) and other stunning East Izu sites with crystal-clear waters and amazing marine life year-round.</p>
+            <div class="tour-features">
+              <span class="tour-feat">2 Dives</span>
+              <span class="tour-feat">Boat / Shore</span>
+              <span class="tour-feat">All Levels</span>
+            </div>
+          </div>
+        </div>
+        <div class="tour-card">
+          <div class="tour-img" style="background: linear-gradient(135deg, #064e3b, #059669);">
+            🌿
+          </div>
+          <div class="tour-body">
+            <h3>Western Izu</h3>
+            <p>Discover hidden dive sites along Western Izu's dramatic coastline. Dramatic walls, caves, and prolific marine life.</p>
+            <div class="tour-features">
+              <span class="tour-feat">2 Dives</span>
+              <span class="tour-feat">Advanced Sites</span>
+              <span class="tour-feat">Scenic Drive</span>
+            </div>
+          </div>
+        </div>
+        <div class="tour-card">
+          <div class="tour-img" style="background: linear-gradient(135deg, #0891b2, #06b6d4);">
+            🐢
+            <span class="tour-tag">On Demand</span>
+          </div>
+          <div class="tour-body">
+            <h3>Okinawa Tours</h3>
+            <p>Dream of tropical reefs? We organize custom Okinawa dive trips. Kerama Islands, Miyako, and more — on request.</p>
+            <div class="tour-features">
+              <span class="tour-feat">Custom Trip</span>
+              <span class="tour-feat">Tropical Reefs</span>
+              <span class="tour-feat">Multi-Day</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">💰 Pricing</div>
+        <h2 class="section-title">Transparent & Simple</h2>
+        <p class="section-subtitle">All-inclusive pricing. No hidden fees. Equipment rental included.</p>
+      </div>
+      <div class="pricing-grid">
+        <div class="price-card featured">
+          <span class="price-badge">Popular</span>
+          <h3>Fun Dive</h3>
+          <p class="price-desc">For certified divers (2 dives)</p>
+          <div class="price-amount">¥21,000 <span>/ person</span></div>
+          <ul class="price-includes">
+            <li>2 guided dives</li>
+            <li>Full equipment rental</li>
+            <li>Multilingual guide</li>
+            <li>Insurance included</li>
+            <li>Photos of your dive</li>
+          </ul>
+          <a href="booking.html" class="btn btn-primary">Book Fun Dive</a>
+        </div>
+        <div class="price-card">
+          <h3>First-Time Diver</h3>
+          <p class="price-desc">No experience needed</p>
+          <div class="price-amount">¥23,000 <span>/ person</span></div>
+          <ul class="price-includes">
+            <li>Full training session</li>
+            <li>Guided introductory dive</li>
+            <li>All equipment provided</li>
+            <li>Multilingual instruction</li>
+            <li>Insurance included</li>
+          </ul>
+          <a href="booking.html" class="btn btn-primary">Book First Dive</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <svg viewBox="0 0 36 36" fill="none" xmlns="https://thumbs.dreamstime.com/b/minimalist-abstract-logo-featuring-stylized-circular-shape-formed-two-interlocking-arcs-shades-blue-teal-small-446014583.jpg">
+              <circle cx="18" cy="18" r="17" stroke="#00d4aa" stroke-width="2"/>
+              <path d="M10 20c2-4 4-8 8-8s6 4 8 8" stroke="#00d4aa" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="18" cy="14" r="3" fill="#00d4aa"/>
+              <path d="M14 26c1-2 2.5-3 4-3s3 1 4 3" stroke="#00d4aa" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            Breakwater Dives
+          </a>
+          <p>Discover Izu's incredible underwater world with personalized, multilingual dive experiences. Based in Izu Peninsula, Japan.</p>
+        </div>
+        <div>
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="booking.html">Booking</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Dive Sites</h4>
+          <ul>
+            <li><a href="booking.html">East Izu</a></li>
+            <li><a href="booking.html">Western Izu</a></li>
+            <li><a href="booking.html">Okinawa</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:Jwhk751@gmail.com">📧 Jwhk751@gmail.com</a></li>
+            <li>📍 Izu Peninsula, Japan</li>
+            <li>🗣️ EN / FR / JP</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 Breakwater Dives. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
-
 </html>
